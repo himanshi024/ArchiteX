@@ -4,8 +4,7 @@ import type { GraphContext } from "../../graph/contracts/GraphContext";
 /**
  * MockRuleEngine — A stub implementation of RuleEngine.
  *
- * PURPOSE: Allows Dev A to build, wire, and test all API endpoints
- * without waiting for Dev C's compiler implementation.
+ * PURPOSE: test all API endpoints without waiting for compiler implementation.
  *
  * Replace this with the real ArchQLEngine once Dev C's compiler
  * is integrated (Phase 3 of the project plan).

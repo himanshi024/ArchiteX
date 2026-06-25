@@ -4,7 +4,6 @@ import { MockRuleEngine } from "./engine/services/MockRuleEngine";
 const PORT = 4000;
 
 async function bootstrap() {
-  // TODO: Replace MockRuleEngine with real ArchQLEngine once Dev C integrates it.
   // The swap is a one-liner here — everything else stays the same.
   const engine = new MockRuleEngine();
 

@@ -5,8 +5,7 @@ import type { GraphEdge } from "../models/GraphEdge";
  * GraphContext — The ONLY interface through which the compiler
  * accesses graph data.
  *
- * This contract is jointly owned by Dev A (implementor) and Dev C (consumer).
- * Dev C's compiler MUST NOT import GraphNode, GraphEdge, or any internal
+ * compiler MUST NOT import GraphNode, GraphEdge, or any internal
  * graph implementation directly.
  *
  * Design principles:

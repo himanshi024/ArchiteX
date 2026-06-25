@@ -3,7 +3,7 @@ import type { GraphNode } from "./GraphNode";
 import type { GraphEdge } from "./GraphEdge";
 
 /**
- * ArchitectureGraph — Dev A's concrete, indexed implementation of GraphContext.
+ * ArchitectureGraph — indexed implementation of GraphContext.
  *
  * Built once per /validate request from the validated, normalised graph payload.
  * Designed for fast lookups with pre-built adjacency maps.
