@@ -1,0 +1,23 @@
+However, since modern browsers support the built-in Web Crypto API, you don't actually need uuid unless you specifically want it.
+
+Instead, you can use:
+
+const id = crypto.randomUUID();
+
+This is:
+
+✅ Built into modern browsers
+✅ No extra dependency
+✅ Produces RFC 4122 UUIDs
+✅ Perfect for React Flow node/edge IDs
+My recommendation
+
+Install:
+
+npm install @xyflow/react axios lucide-react
+
+Skip uuid and use:
+
+crypto.randomUUID()
+
+This keeps your project lighter with one fewer dependency. Many modern React projects now prefer the built-in crypto.randomUUID() over the uuid package unless they need compatibility with older environments.
