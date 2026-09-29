@@ -11,7 +11,9 @@ YIELD "Load balancer has fewer than 2 servers" WITH lb, srv ONCE
 
 console.log("Tokenizing sample input...\n");
 
-const lexer = new Lexer(sampleInput);
+
+const mystring = `hi hello << 34567`
+const lexer = new Lexer(mystring);
 const { tokens, diagnostics } = lexer.tokenize();
 
 console.log("=== TOKENS ===");

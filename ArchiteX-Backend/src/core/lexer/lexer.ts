@@ -177,7 +177,7 @@ export class Lexer {
                 line: this.startLine,
                 column: this.startColumn
             });
-            return;
+            return ;
         }
         // Consume closing quote
         this.advance();
