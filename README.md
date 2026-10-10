@@ -11,8 +11,34 @@ ArchiteX is an intelligent architecture analysis tool that transforms system dia
 - **Performance Benchmarking:** Simulate traffic patterns and measure system performance under load.
 
 # Flow 
-<img width="1175" height="126" alt="image" src="https://github.com/user-attachments/assets/36ef0528-32d2-489a-aca4-979ad1e4b5a7" />
 
+flowchart LR
+```mermaid
+    subgraph Engine["Backend Engine (Priority 1)"]
+        direction LR
+        L["Lexer Class"] --> P["Parser"]
+        P --> SA["Semantic Analyzer"]
+        SA --> GPM["Graph Pattern Matcher"]
+        GPM --> RE["Rule Evaluator"]
+    end
+
+    subgraph API["Backend API (Priority 2)"]
+        direction TB
+        NER["Node/Edge/Rule Constants"] --> RH["Route Handlers"]
+        GVM["Graph Validation Middleware"]
+    end
+
+    subgraph Frontend["Frontend Canvas (Priority 3)"]
+        direction TB
+        RFC["React Flow Canvas"]
+        CSP["Component Sidebar/Palette"]
+        VP["Violations Panel"]
+        SP["Simulation Panel"]
+    end
+
+    RE --> RH
+    RH --> RFC
+```
 ## Getting Started
 
 ### Prerequisites
