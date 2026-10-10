@@ -12,8 +12,8 @@ ArchiteX is an intelligent architecture analysis tool that transforms system dia
 
 # Flow 
 
-flowchart LR
 ```mermaid
+flowchart LR
     subgraph Engine["Backend Engine (Priority 1)"]
         direction LR
         L["Lexer Class"] --> P["Parser"]
