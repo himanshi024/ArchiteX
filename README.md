@@ -10,6 +10,9 @@ ArchiteX is an intelligent architecture analysis tool that transforms system dia
 - **Interactive Visualization:** Convert complex architecture diagrams into intuitive, interactive visualizations.
 - **Performance Benchmarking:** Simulate traffic patterns and measure system performance under load.
 
+# Flow 
+<img width="1175" height="126" alt="image" src="https://github.com/user-attachments/assets/36ef0528-32d2-489a-aca4-979ad1e4b5a7" />
+
 ## Getting Started
 
 ### Prerequisites
